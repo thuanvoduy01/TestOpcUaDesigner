@@ -1,0 +1,11 @@
+D:\Proj\VStudio\test_ModelDesigner\bin\Debug\test_ModelDesigner.exe.config
+D:\Proj\VStudio\test_ModelDesigner\bin\Debug\test_ModelDesigner.exe
+D:\Proj\VStudio\test_ModelDesigner\bin\Debug\test_ModelDesigner.pdb
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.csproj.AssemblyReference.cache
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.csproj.SuggestedBindingRedirects.cache
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.Form1.resources
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.Properties.Resources.resources
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.csproj.GenerateResource.cache
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.csproj.CoreCompileInputs.cache
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.exe
+D:\Proj\VStudio\test_ModelDesigner\obj\Debug\test_ModelDesigner.pdb

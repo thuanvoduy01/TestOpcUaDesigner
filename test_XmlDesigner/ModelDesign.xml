@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opc:ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd" xmlns:ua="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/OPCUAServer" TargetNamespace="http://opcfoundation.org/OPCUAServer">
+  <!--			Create namespace			-->
+  <opc:Namespaces>
+    <opc:Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</opc:Namespace>
+    <opc:Namespace Name="MyOPCUAServer" Prefix="MyOPCUAServer">http://opcfoundation.org/OPCUAServer</opc:Namespace>
+  </opc:Namespaces>
+  <opc:ObjectType xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd" SymbolicName="GenericSensorType" BaseType="ua:BaseObjectType">
+    <opc:Description xmlns:opc="http://opcfoundation.org/UA/ModelDesign">A generic sensor.</opc:Description>
+    <opc:Children>
+      <opc:Variable SymbolicName="Value" DataType="ua:Double" ValueRank="Scalar" TypeDefinition="ua:AnalogItemType" AccessLevel="Read" />
+    </opc:Children>
+  </opc:ObjectType>
+  <opc:ObjectType xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd" SymbolicName="MotorType" BaseType="ua:BaseObjectType">
+    <opc:Description xmlns:opc="http://opcfoundation.org/UA/ModelDesign">Motor DataType.</opc:Description>
+    <opc:Children>
+      <opc:Variable SymbolicName="Mode" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="Start" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="Stop" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="StartCondition" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="StopCondition" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="RunFeedback" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="CMD" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+      <opc:Variable SymbolicName="Fault" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite" />
+    </opc:Children>
+  </opc:ObjectType>
+  <opc:ObjectType xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd" SymbolicName="TankBatchSystemType" BaseType="ua:BaseObjectType" SupportsEvents="true">
+    <opc:Description xmlns:opc="http://opcfoundation.org/UA/ModelDesign">A production batch plant.</opc:Description>
+    <opc:Children>
+      <opc:Object SymbolicName="Motor1" TypeDefinition="MotorType" SupportsEvents="true">
+        <opc:BrowseName>Motor1</opc:BrowseName>
+      </opc:Object>
+      <opc:Object SymbolicName="Motor2" TypeDefinition="MotorType" SupportsEvents="true">
+        <opc:BrowseName>Motor2</opc:BrowseName>
+      </opc:Object>
+      <opc:Object SymbolicName="Motor3" TypeDefinition="MotorType" SupportsEvents="true">
+        <opc:BrowseName>Motor3</opc:BrowseName>
+      </opc:Object>
+    </opc:Children>
+  </opc:ObjectType>
+  <opc:Object xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd" SymbolicName="TankBatch" TypeDefinition="TankBatchSystemType" SupportsEvents="true">
+    <opc:BrowseName>System</opc:BrowseName>
+    <opc:References>
+      <opc:Reference IsInverse="true">
+        <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
+        <opc:TargetId>ua:ObjectsFolder</opc:TargetId>
+      </opc:Reference>
+    </opc:References>
+  </opc:Object>
+</opc:ModelDesign>

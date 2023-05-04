@@ -1,0 +1,15 @@
+D:\Proj\VStudio\test_BatchFile\bin\Debug\net6.0\test_BatchFile.exe
+D:\Proj\VStudio\test_BatchFile\bin\Debug\net6.0\test_BatchFile.deps.json
+D:\Proj\VStudio\test_BatchFile\bin\Debug\net6.0\test_BatchFile.runtimeconfig.json
+D:\Proj\VStudio\test_BatchFile\bin\Debug\net6.0\test_BatchFile.dll
+D:\Proj\VStudio\test_BatchFile\bin\Debug\net6.0\test_BatchFile.pdb
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.csproj.AssemblyReference.cache
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.AssemblyInfoInputs.cache
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.AssemblyInfo.cs
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.csproj.CoreCompileInputs.cache
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.dll
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\refint\test_BatchFile.dll
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.pdb
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\test_BatchFile.genruntimeconfig.cache
+D:\Proj\VStudio\test_BatchFile\obj\Debug\net6.0\ref\test_BatchFile.dll
