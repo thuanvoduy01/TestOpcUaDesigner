@@ -1,0 +1,8 @@
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\bin\Debug\Test_FindAndDeleteXml.exe.config
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\bin\Debug\Test_FindAndDeleteXml.exe
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\bin\Debug\Test_FindAndDeleteXml.pdb
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\obj\Debug\Test_FindAndDeleteXml.csproj.AssemblyReference.cache
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\obj\Debug\Test_FindAndDeleteXml.csproj.SuggestedBindingRedirects.cache
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\obj\Debug\Test_FindAndDeleteXml.csproj.CoreCompileInputs.cache
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\obj\Debug\Test_FindAndDeleteXml.exe
+D:\Proj\VStudio\Test_OpcUaDesigner\Test_FindAndDeleteXml\obj\Debug\Test_FindAndDeleteXml.pdb

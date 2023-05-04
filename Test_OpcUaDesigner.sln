@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_ModelDesigner", "test_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test_XmlDesigner", "test_XmlDesigner\test_XmlDesigner.csproj", "{216C24AA-335A-4FCD-AD69-0F8309F5B810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_FindAndDeleteXml", "Test_FindAndDeleteXml\Test_FindAndDeleteXml.csproj", "{9583C6BA-659B-4F74-9752-0AC3B9F95EF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{216C24AA-335A-4FCD-AD69-0F8309F5B810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{216C24AA-335A-4FCD-AD69-0F8309F5B810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{216C24AA-335A-4FCD-AD69-0F8309F5B810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9583C6BA-659B-4F74-9752-0AC3B9F95EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9583C6BA-659B-4F74-9752-0AC3B9F95EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9583C6BA-659B-4F74-9752-0AC3B9F95EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9583C6BA-659B-4F74-9752-0AC3B9F95EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

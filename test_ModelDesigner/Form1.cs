@@ -16,7 +16,7 @@ namespace test_ModelDesigner
 {
     public partial class Form1 : Form
     {
-        public readonly static string MODEL_DESIGN_UC_DIRECTORY = @"D:\Proj\VStudio\test_ModelDesigner\ModelDesign.xml";
+        public readonly static string MODEL_DESIGN_UC_DIRECTORY = @"D:\Proj\VStudio\Test_OpcUaDesigner\test_ModelDesigner\ModelDesign.xml";
         string xmlModelDesignUcDir = MODEL_DESIGN_UC_DIRECTORY;
 
         public Form1()
