@@ -24,6 +24,10 @@ namespace test_ModelDesigner
             InitializeComponent();
 
             InitDesignerUcMdoel();
+
+            TreeNode root = new TreeNode("ModelDesign");
+            tvwModel.Nodes.Add(root);
+            tvwModel.ExpandAll();
         }
 
         public void InitDesignerUcMdoel()
@@ -453,6 +457,82 @@ namespace test_ModelDesigner
         {
             TreeNode treeNode = tvwModel.SelectedNode;
             string path = treeNode.FullPath;
+        }
+
+        private void btnPopulate_Click(object sender, EventArgs e)
+        {
+            string samplePath = @"D:\Proj\VStudio\Test_OpcUaDesigner\test_ModelDesigner\ModelDesignFindAndDel - Sample.xml";
+
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(samplePath);
+
+            XmlElement root = xmlDocument.DocumentElement;
+
+            
+
+            PopulateTreeview(root, tvwModel.Nodes[0]); 
+        }
+
+        public void PopulateTreeview(XmlNode node, TreeNode treeNode)
+        {
+            string treeNodeText, treeNodeType = String.Empty;
+            TreeNode treeNodeChild = null;
+            XmlNodeList childNodeList = node.ChildNodes;
+            
+            if (childNodeList.Count <= 0)
+            {
+                return;
+            }
+            
+            foreach (XmlNode childNode in childNodeList)
+            {
+                if (childNode.Name.Contains("Namespaces"))
+                {
+                    continue;
+                }
+
+                if (childNode.Name.Contains("References"))
+                {
+                    continue;
+                }
+
+                if (childNode.Name.Contains("Children"))
+                {
+                    PopulateTreeview(childNode, treeNode);
+                    return;
+                }
+
+                if (childNode.Name.Contains("Object")||
+                    childNode.Name.Contains("Variable")||
+                    childNode.Name.Contains("Property"))
+                {
+                    //Object and folder all have xml tag is <opc:Object>
+                    //Base on TypeDefinition to distinguish those two
+                    if (childNode.Name.Contains("Object"))
+                    {
+                        if (childNode.Attributes["TypeDefinition"].Value == "ua:BaseObjectType")
+                        {
+                            treeNodeType = "BaseObjectType";
+                        }
+
+                        if (childNode.Attributes["TypeDefinition"].Value == "ua:FolderType")
+                        {
+                            treeNodeType = "FolderType";
+                        }
+                    }
+                    else
+                    {
+                        treeNodeType = childNode.Name;
+                    }
+
+                    treeNodeText = childNode.Attributes["SymbolicName"].Value;
+
+                    string temp = $"{treeNodeText}::{treeNodeType}";
+                    treeNodeChild = treeNode.Nodes.Add(temp);
+                    PopulateTreeview(childNode, treeNodeChild);
+                }
+                
+            }
         }
     }
 }

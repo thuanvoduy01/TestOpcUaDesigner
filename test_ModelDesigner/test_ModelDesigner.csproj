@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelDesign.xml" />
+    <Content Include="ModelDesignFindAndDel - Sample.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

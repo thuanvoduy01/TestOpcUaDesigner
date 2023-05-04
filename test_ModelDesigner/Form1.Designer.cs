@@ -28,27 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node8");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node1", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node9");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node10");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node2", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Root", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10});
             this.tvwModel = new System.Windows.Forms.TreeView();
             this.btnAddFolder = new System.Windows.Forms.Button();
             this.btnAddObject = new System.Windows.Forms.Button();
@@ -60,36 +39,13 @@
             this.txtDesName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPopulate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tvwModel
             // 
             this.tvwModel.Location = new System.Drawing.Point(31, 39);
             this.tvwModel.Name = "tvwModel";
-            treeNode1.Name = "Node6";
-            treeNode1.Text = "Node6";
-            treeNode2.Name = "Node7";
-            treeNode2.Text = "Node7";
-            treeNode3.Name = "Node8";
-            treeNode3.Text = "Node8";
-            treeNode4.Name = "Node1";
-            treeNode4.Text = "Node1";
-            treeNode5.Name = "Node9";
-            treeNode5.Text = "Node9";
-            treeNode6.Name = "Node10";
-            treeNode6.Text = "Node10";
-            treeNode7.Name = "Node2";
-            treeNode7.Text = "Node2";
-            treeNode8.Name = "Node3";
-            treeNode8.Text = "Node3";
-            treeNode9.Name = "Node4";
-            treeNode9.Text = "Node4";
-            treeNode10.Name = "Node5";
-            treeNode10.Text = "Node5";
-            treeNode11.Name = "Node0";
-            treeNode11.Text = "Root";
-            this.tvwModel.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode11});
             this.tvwModel.Size = new System.Drawing.Size(198, 273);
             this.tvwModel.TabIndex = 0;
             this.tvwModel.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvwModel_AfterSelect);
@@ -183,6 +139,16 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "symbolic name";
             // 
+            // btnPopulate
+            // 
+            this.btnPopulate.Location = new System.Drawing.Point(334, 289);
+            this.btnPopulate.Name = "btnPopulate";
+            this.btnPopulate.Size = new System.Drawing.Size(119, 23);
+            this.btnPopulate.TabIndex = 1;
+            this.btnPopulate.Text = "Populate";
+            this.btnPopulate.UseVisualStyleBackColor = true;
+            this.btnPopulate.Click += new System.EventHandler(this.btnPopulate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +159,7 @@
             this.Controls.Add(this.txtDesName);
             this.Controls.Add(this.txtDesType);
             this.Controls.Add(this.txtSymbolicName);
+            this.Controls.Add(this.btnPopulate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAddProperty);
             this.Controls.Add(this.btnAddVariable);
@@ -220,6 +187,7 @@
         private System.Windows.Forms.TextBox txtDesName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPopulate;
     }
 }
 
